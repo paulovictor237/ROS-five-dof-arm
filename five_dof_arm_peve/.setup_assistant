@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ""
+    relative_path: /home/peve/ros1_ws_pi/src/five-dof-robot-arm-master/five_dof_arm_peve/urdf/five_dof_arm_peve.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/five_dof_arm.srdf
+  CONFIG:
+    author_name: paulo victor
+    author_email: paulovictor237@gmail.com
+    generated_timestamp: 1573152224

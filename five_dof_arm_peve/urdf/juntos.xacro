@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda">
+  <xacro:include filename="$(find five_dof_arm_peve)/urdf/five_dof_arm.urdf"/>
+  <xacro:include filename="$(find robotiq_2f_140_gripper_visualization)/urdf/robotiq_arg2f_140_model_macro.xacro" />
+  
+  <five_dof_arm />
+  <xacro:robotiq_arg2f_140 prefix=""/>
+
+  <joint name="efetuador" type="fixed">
+    <!-- <parent link="grasping_frame"/> -->
+    <parent link="claw_palm"/>
+    <child link="robotiq_arg2f_base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 1.57"/>
+  </joint>
+
+</robot>
