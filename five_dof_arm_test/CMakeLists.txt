@@ -172,6 +172,11 @@ add_executable(test_random_node src/test_random.cpp)
 add_dependencies(test_random_node seven_dof_arm_test_generate_messages_cpp)
 target_link_libraries(test_random_node ${catkin_LIBRARIES})
 
+## Declare a cpp executable
+add_executable(arduino_node src/arduino_node.cpp)
+target_link_libraries(arduino_node ${catkin_LIBRARIES})
+add_dependencies(arduino_node arduino_integration_generate_messages_cpp)
+
 #############
 ## Install ##
 #############
