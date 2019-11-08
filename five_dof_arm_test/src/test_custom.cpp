@@ -130,24 +130,29 @@ int main(int argc, char **argv)
   moveit::core::RobotStatePtr current_state = gripper.getCurrentState();
   std::vector<double> joint_group_positions;
   current_state->copyJointGroupPositions(joint_model_group, joint_group_positions);
-  // joint_group_positions[0] = 0.03;  // fechado
-  joint_group_positions[0] = 1.10; // aberto
+  joint_group_positions[0] = 0.0; // aberto
+  gripper.setJointValueTarget(joint_group_positions);
+  gripper.move();
+  
+  sleep(2.0);
+  joint_group_positions[0] = 0.8; // aberto
   gripper.setJointValueTarget(joint_group_positions);
   // gripper.setJointValueTarget("finger_joint1",0.03);
   // gripper.setMaxAccelerationScalingFactor(0);
   // gripper.setMaxVelocityScalingFactor(0);
   // gripper.setPlanningTime(1);
   gripper.move();
-  // sleep(3.0);
+
+  sleep(2.0);
   joint_group_positions[0] = 0.0; // aberto
   gripper.setJointValueTarget(joint_group_positions);
-  // gripper.setJointValueTarget("finger_joint1",0.03);
   gripper.move();
-  // sleep(3.0);
-  joint_group_positions[0] = 1.10; // aberto
+
+  sleep(2.0);
+  joint_group_positions[0] = 0.8; // aberto
   gripper.setJointValueTarget(joint_group_positions);
-  // gripper.setJointValueTarget("finger_joint1",0.03);
   gripper.move();
+
   ros::shutdown();  
 
  return 0;

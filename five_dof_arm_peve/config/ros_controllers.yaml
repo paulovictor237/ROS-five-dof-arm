@@ -35,4 +35,4 @@ controller_list:
     default: True
     type: FollowJointTrajectory
     joints:
-      claw_joint_1
+      []

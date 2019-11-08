@@ -1,5 +1,9 @@
 # five_dof_robot_arm
 
+> ligue o arduino ao computador
+> alimente somente a garra com o próprio arduino
+> alimente o resto braço robotico com uma fonte externa
+> conecte o ground do arduino junto ao ground da fonte
 > para rodar o programa digite os seguintes comandos nessa ordem
 
 > roda o node prinpical

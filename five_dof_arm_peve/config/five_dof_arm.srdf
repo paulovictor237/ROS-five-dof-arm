@@ -23,7 +23,6 @@
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="base_link_2" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="bicep" reason="Never" />
-    <disable_collisions link1="base_link" link2="claw_1" reason="Never" />
     <disable_collisions link1="base_link" link2="claw_2" reason="Never" />
     <disable_collisions link1="base_link" link2="grasping_frame" reason="Never" />
     <disable_collisions link1="base_link" link2="map" reason="Adjacent" />
@@ -41,7 +40,6 @@
     <disable_collisions link1="base_link_2" link2="bicep" reason="Never" />
     <disable_collisions link1="base_link_2" link2="claw_1" reason="Never" />
     <disable_collisions link1="base_link_2" link2="claw_2" reason="Never" />
-    <disable_collisions link1="base_link_2" link2="claw_palm" reason="Never" />
     <disable_collisions link1="base_link_2" link2="grasping_frame" reason="Never" />
     <disable_collisions link1="base_link_2" link2="map" reason="Never" />
     <disable_collisions link1="base_link_2" link2="servo_1" reason="Default" />
@@ -83,7 +81,6 @@
     <disable_collisions link1="claw_1" link2="servo_1_support_3" reason="Never" />
     <disable_collisions link1="claw_1" link2="servo_2" reason="Never" />
     <disable_collisions link1="claw_1" link2="servo_3" reason="Never" />
-    <disable_collisions link1="claw_1" link2="servo_4" reason="Never" />
     <disable_collisions link1="claw_1" link2="servo_4_2" reason="Never" />
     <disable_collisions link1="claw_1" link2="servo_4_4" reason="Never" />
     <disable_collisions link1="claw_1" link2="servo_4_support_1" reason="Never" />
@@ -97,7 +94,6 @@
     <disable_collisions link1="claw_2" link2="servo_1_support_3" reason="Never" />
     <disable_collisions link1="claw_2" link2="servo_2" reason="Never" />
     <disable_collisions link1="claw_2" link2="servo_3" reason="Never" />
-    <disable_collisions link1="claw_2" link2="servo_4" reason="Never" />
     <disable_collisions link1="claw_2" link2="servo_4_2" reason="Never" />
     <disable_collisions link1="claw_2" link2="servo_4_4" reason="Never" />
     <disable_collisions link1="claw_2" link2="servo_4_support_1" reason="Never" />

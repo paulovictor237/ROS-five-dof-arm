@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/five_dof_arm.srdf
   CONFIG:
-    author_name: paulo victor
+    author_name: Paulo Victor Duarte
     author_email: paulovictor237@gmail.com
-    generated_timestamp: 1573152224
+    generated_timestamp: 1573249015

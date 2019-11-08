@@ -483,7 +483,7 @@
     <child link="claw_1"/>
     <origin xyz="0.01 0 0.01" rpy="0 -0.30 0"/>
     <axis xyz="0 1 0" />
-    <limit effort="100" velocity="1" lower="0.0" upper="0.60"/>
+    <limit effort="100" velocity="1" lower="0.0" upper="1.0"/>
     <dynamics damping="50" friction="1"/>
   </joint>
 
@@ -492,7 +492,7 @@
     <child link="claw_2"/>
     <origin xyz="-0.01 0 0.01" rpy="0 0.30 0"/>
     <axis xyz="0 -1 0" />
-    <limit effort="100" velocity="1" lower="0.0" upper="0.60"/>
+    <limit effort="100" velocity="1" lower="0.0" upper="1.0"/>
     <mimic joint="claw_joint_1" multiplier="1.0" offset="0.0" />
     <dynamics damping="50" friction="1"/>
   </joint>

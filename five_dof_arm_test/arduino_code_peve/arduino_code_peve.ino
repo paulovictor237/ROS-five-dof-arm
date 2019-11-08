@@ -6,7 +6,7 @@
 #include <VarSpeedServo.h>
 
 // speed, 1 - 255 slower to faster
-#define SPEED 70
+#define SPEED 60
                // Servo servo_1_1, servo_2_2, servo_3_1, servo_4_1, claw;
                VarSpeedServo servo_1_1,
     servo_2_2, servo_3_1, servo_4_1, claw;
