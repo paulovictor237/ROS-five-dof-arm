@@ -9,7 +9,9 @@
 - Carregue o código da pasta five_dof_arm_test/arduino_code_peve.ino para 		o seu Arduino UNO
 
 ## Pinos
+
 Abaixo estão dispostos os servos e seus respectivos pinos no Arduino UNO.
+
 | Servo | Pino |
 | ------ | ------ |
 | Servo 1 (Base)  | ~ 3 |
@@ -17,7 +19,6 @@ Abaixo estão dispostos os servos e seus respectivos pinos no Arduino UNO.
 | Servo 3 		  | ~ 6 |
 | Servo 4 		  | ~ 9 |
 | Servo 5 (Garra) | ~ 10|
-
 
 ## Rodar o programa 
 Rodar o node principal:
