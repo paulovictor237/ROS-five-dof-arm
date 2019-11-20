@@ -1,22 +1,54 @@
-# five_dof_robot_arm
+# ROS - Five Dof Robot Arm
 
-> ligue o arduino ao computador
-> alimente somente a garra com o próprio arduino
-> alimente o resto braço robotico com uma fonte externa
-> conecte o ground do arduino junto ao ground da fonte
-> para rodar o programa digite os seguintes comandos nessa ordem
+## Instruções!
+- Ligue o Arduino ao computador
+- Alimente somente a garra com o próprio Arduino (5V)
+- Alimente o resto braço robótico com uma fonte externa em (6V) 
+- Não esqueça de verificar se a corrente da fonte está limitada 
+- Conecte o ground do Arduino junto ao ground da fonte
+- Carregue o código da pasta five_dof_arm_test/arduino_code_peve.ino para 		o seu Arduino UNO
 
-> roda o node prinpical
-roscore
-> cria os nodes subscrible do arduino
-rosrun five_dof_arm_test arduino_node
-> cria os nodes publishers do arduino
-rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=115200
-> inicia o Rviz
-roslaunch five_dof_arm_peve demo.launch use_gui:=true
+## Pinos
+Abaixo estão dispostos os servos e seus respectivos pinos no Arduino UNO.
+| Servo | Pino |
+| ------ | ------ |
+| Servo 1 (Base)  | ~ 3 |
+| Servo 2 		  | ~ 5 |
+| Servo 3 		  | ~ 6 |
+| Servo 4 		  | ~ 9 |
+| Servo 5 (Garra) | ~ 10|
 
 
-> outras aplicações
-rosrun five_dof_arm_test test_random_node 
-rosrun five_dof_arm_test test_custom_node
-rosrun five_dof_arm_test test_custom_node_2
+## Rodar o programa 
+Rodar o node principal:
+```sh
+$ roscore
+```
+Cria os nodes subscrible do arduino:
+```sh
+$ rosrun five_dof_arm_test arduino_node
+```
+Cria os nodes publishers do arduino:
+```sh
+$ rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=115200
+```
+Inicia o Rviz:
+```sh
+$ roslaunch five_dof_arm_peve demo.launch use_gui:=true
+```
+Outras aplicações:
+```sh
+$ rosrun five_dof_arm_test test_random_node 
+$ rosrun five_dof_arm_test test_custom_node
+$ rosrun five_dof_arm_test test_custom_node_2
+```
+## Imagens
+
+![arm](Photos/arm.jpg)
+![arduino](Photos/arduino.jpg)
+![placa](Photos/placa.jpg)
+
+License
+----
+Paulo Victor Duarte
+**Free Software, Hell Yeah!**
