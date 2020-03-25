@@ -51,6 +51,6 @@ $ rosrun five_dof_arm_test test_custom_node_2
 
 License
 ----
-Paulo Victor Duarte
+Copyright © 2019, Paulo Victor Duarte, All rights reserved.
 
 **Free Software, Hell Yeah!**
